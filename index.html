@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="globals.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="ligth">
+  <nav id="nav">
+    <div id="nav-container">
+      <form id="form">
+        <div class="form-container">
+          <input type="text" class="form-input title-input" placeholder="Escribe una nota...">
+          <div class="accordion">
+            <textarea class="form-input text-input" placeholder="Descripcion de tu nota"></textarea>
+            <button class="form-btn">+</button>
+          </div>
+        </div>
+      </form>
+      <button id="change-theme-btn">Click</button>
+    </div>
+  </nav>
+
+
+  <main id="main-container">
+    <div class="pinned-list-container">
+      <h2 id="pinned-list-title">Pinned</h2>
+      <ul id="pinned-list"></ul>
+    </div>
+    <div class="list-container">
+      <h2 id="list-title">Notes</h2>
+      <ul id="list"></ul>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
